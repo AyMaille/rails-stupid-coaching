@@ -1,0 +1,12 @@
+<h1>answer page</h1>
+
+<form action="/answer">
+  <input type="text" name="ask">
+  <input type="submit" value="Ask!">
+</form>
+
+<p><%= @asked_question %><br><em>- you</em></p>
+<p><%= @answer %><br><em>- your coach</em></p>
+
+<%# <a href="/ask">une autre stupide question?</a> %>
+<%= link_to "une autre stupide question?", '/ask' %>
